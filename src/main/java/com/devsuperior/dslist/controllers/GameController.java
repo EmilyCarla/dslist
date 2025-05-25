@@ -18,8 +18,8 @@ public class GameController {
     @Autowired
     private GameService gameService;
 
-    @GetMapping    
-    public List<GameMinDTO> findAll(){
+    @GetMapping
+    public List<GameMinDTO> findAll() {
         List<GameMinDTO> result = gameService.findAll();
         return result;
     }
